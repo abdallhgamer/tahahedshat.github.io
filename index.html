@@ -1,1 +1,334 @@
-holo would
+<!DOCTYPE html><html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>عبدالله گیمر</title><meta name="description" content="سایت رسمی عبدالله گیمر؛ معرفی برنامه‌ها، ربات‌ها، کانال‌ها و پروژه‌های عبدالله گیمر."><meta name="application-name" content="عبدالله گیمر"><meta name="author" content="
+taha-hedshat"><meta name="robots" content="index, follow"><meta property="og:type" content="website">
+<meta property="og:title" content="">
+<meta property="og:site_name" content="taha-hedshat">
+<meta property="og:description" content=" سایت رسمی طاها هدشات">
+<meta property="og:url" content="https://abdallhgamer.github.io/tahahedshat.github.io/">
+<meta property="og:image" content="https://raw.githubusercontent.com/abdallhgamer/abdallhgamer.github.io/main/InShot_20260305_124624284.jpg"><link rel="icon" type="image/jpeg" href="/InShot_20260305_124624284.jpg"><link href="https://cdn.jsdelivr.net/npm/vazirmatn@33.0.3/Vazirmatn-font-face.css" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"><style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg: #070812;
+    --primary: #7c5cff;
+    --cyan: #20d9ff;
+}
+
+body {
+    font-family: Vazirmatn, Tahoma, sans-serif;
+    background:
+        radial-gradient(circle at 10% 0%, #30205d 0%, transparent 30%),
+        radial-gradient(circle at 90% 10%, #102e49 0%, transparent 30%),
+        var(--bg);
+    color: white;
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
+    background: rgba(7,8,18,.85);
+    backdrop-filter: blur(15px);
+    padding: 18px;
+    border-bottom: 1px solid #ffffff20;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 21px;
+    font-weight: 900;
+}
+
+.logo span {
+    color: var(--primary);
+}
+
+.header-btn {
+    background: #ffffff10;
+    padding: 9px 16px;
+    border-radius: 12px;
+    border: 1px solid #ffffff20;
+    font-size: 13px;
+}
+
+.hero {
+    text-align: center;
+    padding: 55px 15px 35px;
+}
+
+.hero h1 {
+    font-size: 35px;
+    font-weight: 900;
+    background: linear-gradient(90deg,#20d9ff,#7c5cff,#ff3cac);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.hero p {
+    color: #a8aec7;
+    margin-top: 12px;
+}
+
+.search-box {
+    max-width: 550px;
+    margin: 25px auto;
+    padding: 0 15px;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 15px;
+    border-radius: 15px;
+    background: #ffffff0b;
+    border: 1px solid #ffffff20;
+    color: white;
+    outline: none;
+    font-family: inherit;
+}
+
+.nav {
+    display: flex;
+    gap: 9px;
+    overflow-x: auto;
+    padding: 15px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.nav button {
+    white-space: nowrap;
+    background: #ffffff0b;
+    border: 1px solid #ffffff15;
+    color: #c5c9df;
+    padding: 11px 18px;
+    border-radius: 13px;
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: bold;
+}
+
+.nav button.active {
+    background: linear-gradient(135deg,#7c5cff,#5540d8);
+    color: white;
+}
+
+.container {
+    max-width: 1100px;
+    padding: 15px;
+    margin: auto;
+}
+
+.section-title {
+    font-size: 21px;
+    font-weight: 900;
+    margin: 25px 0 18px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.section-title::before {
+    content: "";
+    width: 5px;
+    height: 25px;
+    border-radius: 5px;
+    background: linear-gradient(#20d9ff,#7c5cff,#ff3cac);
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(280px,1fr));
+    gap: 16px;
+}
+
+.card {
+    background: linear-gradient(145deg,#191b35,#0d1020);
+    border: 1px solid #ffffff15;
+    border-radius: 20px;
+    padding: 17px;
+    display: flex;
+    gap: 13px;
+    align-items: center;
+    transition: .3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: #7c5cff;
+}
+
+.icon {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg,#7c5cff55,#20d9ff33);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 27px;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
+.icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.details {
+    flex: 1;
+    min-width: 0;
+}
+
+.details h3 {
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.details p {
+    color: #a8aec7;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 8px 13px;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    background: linear-gradient(135deg,#7c5cff,#5540d8);
+    color: white;
+}
+
+.download {
+    background: linear-gradient(135deg,#19b981,#0f9f71);
+}
+
+.telegram {
+    background: linear-gradient(135deg,#17b6d4,#087f9d);
+}
+
+.hidden {
+    display: none !important;
+}
+
+footer {
+    text-align: center;
+    padding: 35px 15px;
+    margin-top: 50px;
+    border-top: 1px solid #ffffff15;
+    color: #a8aec7;
+    font-size: 13px;
+}
+
+footer strong {
+    color: #7c5cff;
+}
+</style></head><body><header>
+    <div class="header">
+        <div class="logo">
+         👑 taha<span>hedshat</span>
+        </div>
+        <a href="#channels" class="header-btn">ارتباط با ما</a>
+    </div>
+</header><section class="hero">
+    <h1>🔥 طاها هدشات 🎮</h1>
+    <p>به سایت رسمی عبدالله گیمر خوش آمدید</p><div class="search-box">
+    <input type="text" id="search"
+    placeholder="🔍 جستجوی برنامه، ربات و پروژه..."
+    oninput="searchItems()">
+</div>
+
+</section><nav class="nav">
+    <button class="active" onclick="filterItems('all',this)">🏠 همه</button>
+    <button onclick="filterItems('store',this)">🛒 فروشگاه</button>
+    <button onclick="filterItems('channels',this)">📺 کانال‌ها</button>
+    <button onclick="filterItems('sites',this)">🌐 سایت‌ها</button>
+    <button onclick="filterItems('apps',this)">📱 برنامه‌ها</button>
+    <button onclick="filterItems('bots',this)">🤖 ربات‌ها</button>
+    <button onclick="filterItems('projects',this)">📁 پروژه‌ها</button>
+</nav><main class="container"><h2 class="section-title">🛒 فروشگاه</h2>
+<div class="cards">
+    <p>هنوز هیچ محصولی وجود ندارد</p>
+</div><h2 class="section-title" id="channels">📺 کانال‌های ما</h2><div class="cards">
+هنوز هیچ کانال نیست
+        </div>
+    </div>
+</div><h2 class="section-title">🌐 سایت‌های ما</h2>
+<div class="cards">
+    <p>هنوز سایتی ساخته نشده است</p>
+
+        </div>
+    </div>
+هنوز هیچ برنامه نیست
+        </div>
+        <div class="details">
+            <h3>ربات عبدالله گیمر</h3>
+            <p>ربات رسمی ما</p>
+            <a href="https://rubika.ir/abdallh_gamer_robot" class="btn">ورود به ربات</a>
+        </div>
+    </div>
+</div><h2 class="section-title">📁 پروژه‌های ما</h2>
+<div class="cards">
+    <p>پروژه‌ای وجود ندارد</p>
+</div></main><footer>
+    <h3>👑 TAHA HEDSHAT</h3>
+    <p></p>ساخته شده توسط طاها هدشات</p>
+    <br>
+    © تمامی حقوق محفوظ است.
+</footer><script>
+function filterItems(category,button) {
+    document.querySelectorAll('.nav button').forEach(btn => {
+        btn.classList.remove('active');
+    });
+
+    button.classList.add('active');
+
+    document.querySelectorAll('.item').forEach(item => {
+        if(category === 'all' || item.dataset.category === category) {
+            item.classList.remove('hidden');
+        } else {
+            item.classList.add('hidden');
+        }
+    });
+
+    document.getElementById('search').value = '';
+}
+
+function searchItems() {
+    let search = document.getElementById('search').value.toLowerCase();
+
+    document.querySelectorAll('.item').forEach(item => {
+        let text = item.innerText.toLowerCase();
+
+        if(text.includes(search)) {
+            item.classList.remove('hidden');
+        } else {
+            item.classList.add('hidden');
+        }
+    });
+}
+</script></body>
+</html>
